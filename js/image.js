@@ -1,0 +1,1 @@
+document.getElementById("banner1").src="img/mbanner1";
