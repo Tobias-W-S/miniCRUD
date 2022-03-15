@@ -1,8 +1,8 @@
-let limitFunc = function(){
+/* let limitFunc = function(){
     const x =  document.getElementById("banner1");
     if (window.innerWidth<451){
 
-        x.src="img/mbanner1.jpg";
+        x. ="url(img/mbanner1.jpg)";
     }
     else{
         x.src="img/banner2.jpg"
@@ -12,4 +12,4 @@ let limitFunc = function(){
 
 limitFunc();
 window.addEventListener("resize", limitFunc);
-window.addEventListener("onload", limitFunc);
+window.addEventListener("onload", limitFunc); */

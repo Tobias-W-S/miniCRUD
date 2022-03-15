@@ -1,0 +1,13 @@
+.body-bg{
+    background-color: rgb(255, 209, 209); 
+    background-image: url("/img/banner1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.bg1{
+    background-image: url("/img/banner1-1.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
