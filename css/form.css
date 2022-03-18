@@ -1,0 +1,20 @@
+.user-input{
+    border: none;
+    border-radius: 2px;
+    height: 40px;
+}
+
+.user-input::placeholder{
+    color: darkgrey;
+    padding-left: 1%;
+    transition-duration: 0.2s;
+}
+
+.user-input:focus::placeholder{
+    font-size: 0.75em;
+}
+
+.user-input:focus{
+    outline: none;
+}
+
