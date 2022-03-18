@@ -10,4 +10,13 @@
     background-image: url("../img/banner1-1.jpg");
     background-size: cover;
     background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+
+.bg2{
+    background-image: url("../img/banner3.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
