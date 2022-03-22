@@ -1,15 +1,15 @@
-/* let limitFunc = function(){
-    const x =  document.getElementById("banner1");
+let limitFunc = function(){
+    const x = document.getElementById("bg1");
     if (window.innerWidth<451){
 
-        x. ="url(img/mbanner1.jpg)";
+        x.style.backgroundImage = "url(../img/banner1-3.jpg)";
     }
     else{
-        x.src="img/banner2.jpg"
+        x.style.backgroundImage = "url(../img/banner1-1.jpg)";
     }
 }
 
 
 limitFunc();
 window.addEventListener("resize", limitFunc);
-window.addEventListener("onload", limitFunc); */
+window.addEventListener("onload", limitFunc); 
