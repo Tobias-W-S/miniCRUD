@@ -33,7 +33,7 @@
     padding-top: 0.60em;
 }
 .menu div p { grid-area: 2 / 4 / 4 / 7; 
-    overflow-y: scroll;
+    overflow-y: auto;
 }
 
 @media only screen and (min-width: 451px){
@@ -78,7 +78,7 @@
 @media only screen and (max-width: 450px){
 
     .menu{
-        height: 70vh;
+        height: 84vh;
     }
 
     .menu div{
