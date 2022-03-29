@@ -19,10 +19,10 @@
               <a class="nav-link active" href="#">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="menu.html">Menu</a>
+              <a class="nav-link" href="menu.php">Menu</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="contact.html">Contact</a>
+              <a class="nav-link" href="contact.php">Contact</a>
             </li>
           </ul>
         </div>
@@ -66,7 +66,7 @@
         <input type="submit" id="submit" class="mt-5 mb-2" style="height:30px; width: 100%;">
       </form>
     </div>
-  <script src="js/image.js"></script>
+
   <script src="js/main.js"></script>
 </body>
 </html>
