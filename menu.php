@@ -1,3 +1,4 @@
+<?php include_once "includes/connect.php";?>
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -28,45 +29,22 @@
     </nav>
     <div class="gap"></div>
     <div class="mt-3 mb-3 menu bg-secondary rounded">
-      <div>
-        <img src="img/example1.jpg">
-        <h1>
-          EXAMPLE
-        </h1>
-        <p>
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Atque, sed incidunt recusandae aliquid ullam illum voluptate ipsam necessitatibus cum vero inventore magni ad, mollitia consectetur animi soluta alias debitis. Sunt. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates nostrum corrupti laborum quod cumque amet aut, ducimus earum tenetur praesentium officiis eaque non quas inventore asperiores accusantium odit perferendis impedit.
-        </p>
-      </div>
-      <div>
-        <img src="img/example1.jpg">
-        <h1>
-          EXAMPLE
-        </h1>
-        <p>
-          Lorem ipsum
-        </p>
-      </div>
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
+      <?php 
+        $sql = "SELECT * FROM menu";
+        $stmt = $connect->prepare($sql);
+        $stmt->execute();
+        $result = $stmt->fetchAll();
+
+        foreach($result as $value){
+          echo '<div>';
+          echo '<img src="img/' . $value['Afbeelding'] . '">';
+          echo '<h1>' . $value['Titel'] . '</h1>';
+          echo '<p><strong>€' . $value['Prijs'] . '</strong>  ' . $value['Beschrijving'] . '</p>';
+          echo '</div>';
+        }
+      ?>
     </div>
-    <div class="gap"></div>
-    <div class="admin container bg-secondary" id="admin">
-      <div>
-        <h1 class="text-white text-center">Title + Text</h1>
-      </div>
-      <div>
-        <h1 class="text-white text-center">Image</h1>
-      </div>
-      <div>
-        <h1 class="text-white text-center">Upload</h1>
-      </div>
-    </div>
-    <div class="gap"></div>
+    <script src="js/main.js"></script>
+    <script src="js/menu.js"></script>
   </body>
 </html>

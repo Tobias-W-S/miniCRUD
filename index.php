@@ -56,17 +56,21 @@
       </div>
 
     </div>
+
     <div class="position-relative container-fluid vh-100 bg2" style="padding: 0;">
-      <form id="loginForm" style="width: 70%; max-width: 600px; height: 60%; margin-top: 10%;" class="rounded container-fluid position-absolute start-50 translate-middle-x px-3 pt-3 bg-danger">
+      <form method="post" action="login.php" id="loginForm" style="width: 70%; max-width: 600px; height: 60%; margin-top: 10%;" class="rounded container-fluid position-absolute start-50 translate-middle-x px-3 pt-3 bg-danger">
         <label style="width: 100%;" class="mb-2"><h3 class="text-white">SIGN HERE</h3></label>
         <label class="text-white pl-1" style="height: 30px; width: 100%;">Username</label>
-        <input id="username" type="text" class="mb-2 user-input" placeholder="Username..." style="width: 100%;">
+        <input id="username" value="" name="username" type="text" class="mb-2 user-input" placeholder="Username..." style="width: 100%;">
         <label class="text-white pl-1" style="height: 30px; width: 100%;">Password</label>
-        <input id="password" type="text" class="mb-2 user-input" placeholder="Password..." style="width: 100%;">
-        <input type="submit" id="submit" class="mt-5 mb-2" style="height:30px; width: 100%;">
+        <input id="password" value="" name="password" type="text" class="mb-2 user-input" placeholder="Password..." style="width: 100%;">
+        <input type="submit" value="login" id="submit" class="mt-5 mb-2" style="height:30px; width: 100%;">
       </form>
     </div>
 
+ 
+
   <script src="js/main.js"></script>
+  <script src="js/image.js"></script>
 </body>
 </html>
