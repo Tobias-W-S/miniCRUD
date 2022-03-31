@@ -1,21 +1,50 @@
-.user-input{
-    border: none;
-    border-radius: 2px;
-    height: 40px;
+.user-input {
+  border: none;
+  border-radius: 2px;
+  height: 40px;
 }
 
-.user-input::placeholder{
-    color: darkgrey;
-    padding-left: 1%;
-    transition-duration: 0.2s;
+.user-input::placeholder {
+  color: darkgrey;
+  padding-left: 1%;
+  transition-duration: 0.2s;
 }
 
-.user-input:focus::placeholder{
-    font-size: 0.75em;
+.user-input:focus::placeholder {
+  font-size: 0.75em;
 }
 
-.user-input:focus{
-    outline: none;
-    border: 3px solid rgb(173, 72, 72);
+.user-input:focus {
+  outline: none;
+  border: 3px solid rgb(173, 72, 72);
 }
 
+.button-login {
+  background-color: rgb(238 108 108);
+}
+
+.button-login {
+  display: inline-block;
+  padding: 15px 25px;
+  font-size: 24px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+}
+
+.button-login:hover {
+  background-color: white;
+  color: black;
+  opacity: 0.8;
+}
+
+.button-login:active {
+  background-color: red;
+  box-shadow: 0 5px rgb(61, 33, 33);
+  transform: translateY(4px);
+}

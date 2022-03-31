@@ -65,7 +65,7 @@
         <input id="username" value="" name="username" type="text" class="mb-2 user-input" placeholder="Username..." style="width: 100%;">
         <label class="text-white pl-1" style="height: 30px; width: 100%;">Password</label>
         <input id="password" value="" name="password" type="text" class="mb-2 user-input" placeholder="Password..." style="width: 100%;">
-        <input type="submit" value="login" id="submit" class="mt-5 mb-2" style="height:30px; width: 100%;">
+        <input class="button-login" type="submit" value="login" id="submit" class="mt-5 mb-2" style="width: 100%;">
       </form>
     </div>
 
