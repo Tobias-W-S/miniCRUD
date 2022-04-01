@@ -10,21 +10,7 @@
     <link href="css/main.css" rel="stylesheet">
 </head>
 <body style="background-color: rgb(255, 232, 232)">
-    <nav class="navbar navbar-expand-sm bg-danger navbar-dark opacity-75">
-        <div class="container-fluid">
-          <ul class="navbar-nav">
-            <li class="nav-item">
-              <a class="nav-link" href="index.php">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="menu.php">Menu</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link active" href="#">Contact</a>
-            </li>
-          </ul>
-        </div>
-    </nav>
+    <?php include_once 'php/nav.php' ?>
     <div style="height: 400px;" class="position-relative container-fluid contact-bg">
       <div style="height: 100%;" class="position-absolute start-50 translate-middle-x container-sm">
         <div style="height: 25%; width: 35%;" class="position-relative p-2 start-50 translate-middle-x">

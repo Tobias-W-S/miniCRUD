@@ -12,21 +12,8 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
 </head>
 <body id="banner">
-    <nav class="navbar navbar-expand-sm bg-danger navbar-dark opacity-75 fixed-top">
-        <div class="container-fluid">
-          <ul class="navbar-nav">
-            <li class="nav-item">
-              <a class="nav-link active" href="#">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="menu.php">Menu</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="contact.php">Contact</a>
-            </li>
-          </ul>
-        </div>
-    </nav>
+    <?php include_once 'php/nav.php' ?>
+
     <div class="position-relative container-fluid vh-100 body-bg" style="padding: 0; z-index: 2;">
         <div style="padding: 0; width: 75%; top: 30%;" class="container-fluid position-absolute start-50 translate-middle-x start-0 bg-danger rounded px-3">
             <h1 class="text-center text-white">Cafetaria De Cafe</h1>
@@ -65,7 +52,7 @@
         <input id="username" value="" name="username" type="text" class="mb-2 user-input" placeholder="Username..." style="width: 100%;">
         <label class="text-white pl-1" style="height: 30px; width: 100%;">Password</label>
         <input id="password" value="" name="password" type="text" class="mb-2 user-input" placeholder="Password..." style="width: 100%;">
-        <input class="button-login" type="submit" value="login" id="submit" class="mt-5 mb-2" style="width: 100%;">
+        <input type="submit" value="login" id="submit" class="mt-5 mb-2 button-login" style="width: 100%;">
       </form>
     </div>
 

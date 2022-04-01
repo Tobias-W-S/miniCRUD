@@ -1,17 +1,28 @@
 const loginForm = document.querySelector("#loginForm")
 
-/* loginForm.addEventListener("submit", (event) => {
-    event.preventDefault();
-    const userField = document.querySelector("#username").value;
-    const passField = document.querySelector("#password").value;
+loginForm.addEventListener("submit", (event) => {
 
-    if(userField == "" || passField == ""){
-        console.log("hoi")
+    const userField = document.querySelector("#username");
+    const passField = document.querySelector("#password");
+
+    if(userField.value == ""){
+        console.log("hoi");
+        userField.style.border = "solid";
+        userField.style.borderWidth = "5px";
+        userField.style.borderColor = "red";
+        event.preventDefault();
         
     }
-    else{
-        return false;
+    if(passField.value == ""){
+        console.log("hoi");
+        passField.style.border = "solid";
+        passField.style.borderWidth = "5px";
+        passField.style.borderColor = "red";
+        event.preventDefault();
     }
-}) */
-
-
+    else{
+        userField.style.border = "none";
+        passField.style.border = "none";
+        return true;
+    }
+})

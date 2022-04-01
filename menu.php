@@ -12,25 +12,17 @@
     <link href="css/main.css" rel="stylesheet">
   </head>
   <body style="background-color: rgb(255, 232, 232)">
-    <nav class="navbar navbar-expand-sm bg-danger navbar-dark opacity-75 fixed-top">
-      <div class="container-fluid">
-        <ul class="navbar-nav">
-          <li class="nav-item">
-            <a class="nav-link" href="index.php">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link active" href="#">Menu</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="contact.php">Contact</a>
-          </li>
-        </ul>
-      </div>
-    </nav>
+    <?php include_once 'php/menuNav.php'; ?>
     <div class="gap"></div>
     <div class="mt-3 mb-3 menu bg-secondary rounded">
       <?php 
-        $sql = "SELECT * FROM menu";
+        if(!isset($_POST['filter'])){
+          $sort = "`ID`";
+        }
+        else{
+          $sort = $_POST['filter'];
+        }
+        $sql = "SELECT * FROM `menu` ORDER BY $sort";
         $stmt = $connect->prepare($sql);
         $stmt->execute();
         $result = $stmt->fetchAll();
@@ -44,7 +36,12 @@
         }
       ?>
     </div>
+    <?php 
+       
+      if ($_POST['username'] == "user" and $_POST['password'] == "admin"){
+        include_once 'php/admin.php';
+      }
+    ?>
     <script src="js/main.js"></script>
-    <script src="js/menu.js"></script>
   </body>
 </html>

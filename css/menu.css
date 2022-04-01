@@ -11,7 +11,6 @@
 }
 
 .menu div{
-    height: 36vh;
     width: 47%;
     background-color: rgb(255, 225, 225);
     margin: 2vh 1.5%;
@@ -36,19 +35,14 @@
     overflow-y: auto;
 }
 
-.admin{
-    height: 50vh;
-
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+.admin-menu{
+    height: 35vh;
+    margin-bottom: 5vh;
+    margin-left: 20%;
+    margin-right: 20%;
 }
 
-.admin div{
-    margin-top: 2vh;
-    width: 30%;
-    height: auto;
-}
+
 
 @media only screen and (min-width: 451px){
 
@@ -92,7 +86,7 @@
 @media only screen and (max-width: 450px){
 
     .menu{
-        height: 84vh;
+        height: 78vh;
     }
 
     .menu div{
