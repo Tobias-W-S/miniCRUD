@@ -1,3 +1,4 @@
+<?php include_once "includes/connect.php";?>
 <!DOCTYPE html>
 <html lang="en">
 <head>

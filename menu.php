@@ -37,9 +37,17 @@
       ?>
     </div>
     <?php 
-       
-      if ($_POST['username'] == "user" and $_POST['password'] == "admin"){
-        include_once 'php/admin.php';
+
+      if(isset($_POST['username']) and isset($_POST['password'])){
+        if ($_POST['username'] == "user" and $_POST['password'] == "admin"){
+          
+          include_once 'php/admin.php';
+        }
+      }
+      else if(isset($_SESSION['username'])){
+        if ($_SESSION['username'] == "user"){
+          include_once 'php/admin.php';
+        }
       }
     ?>
     <script src="js/main.js"></script>
