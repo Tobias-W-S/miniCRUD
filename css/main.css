@@ -1,4 +1,9 @@
+*{
+    
+}
+
 .navbar-nav{
     flex-direction: row !important;
     gap: 10px;
 }
+

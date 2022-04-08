@@ -28,10 +28,26 @@
         $result = $stmt->fetchAll();
 
         foreach($result as $value){
+          
           echo '<div>';
           echo '<img src="img/' . $value['Afbeelding'] . '">';
           echo '<h1>' . $value['Titel'] . '</h1>';
-          echo '<p><strong>€' . $value['Prijs'] . '</strong>  ' . $value['Beschrijving'] . '</p>';
+          echo '<p><strong>€' . $value['Prijs'] . '</strong>  ' . $value['Beschrijving'];
+          
+          if(isset($_POST['username']) and isset($_POST['password'])){
+            if ($_POST['username'] == "user" and $_POST['password'] == "admin"){
+              
+              echo ' <a href="php/edit.php?id=' . $value['ID'] . '" id="' . $value['ID'] . '">Edit</a> <a href="php/delete.php?id=' . $value['ID'] . '" id="' . $value['ID'] . '">Del</a>';
+            }
+          }
+          else if(isset($_SESSION['username'])){
+            if ($_SESSION['username'] == "user"){
+              echo ' <a href="php/edit.php?id=' . $value['ID'] . '" id="' . $value['ID'] . '">Edit</a> <a href="php/delete.php?id=' . $value['ID'] . '" id="' . $value['ID'] . '">Del</a>';
+            }
+          }
+         
+          
+          echo '</p>';
           echo '</div>';
         }
       ?>
