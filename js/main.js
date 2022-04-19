@@ -6,7 +6,7 @@ loginForm.addEventListener("submit", (event) => {
     const passField = document.querySelector("#password");
 
     if(userField.value == ""){
-        console.log("hoi");
+
         userField.style.border = "solid";
         userField.style.borderWidth = "5px";
         userField.style.borderColor = "red";
@@ -14,7 +14,7 @@ loginForm.addEventListener("submit", (event) => {
         
     }
     if(passField.value == ""){
-        console.log("hoi");
+
         passField.style.border = "solid";
         passField.style.borderWidth = "5px";
         passField.style.borderColor = "red";

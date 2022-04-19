@@ -20,6 +20,7 @@
                 <option value="`Titel`">Name</option>
                 <option value="`Prijs`">Price</option>
               </select>
+              <input name="textfilter" type="text" placeholder="Search name...">
               <input type="submit"> 
 
             </form>

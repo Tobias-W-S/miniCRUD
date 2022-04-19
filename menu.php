@@ -22,7 +22,16 @@
         else{
           $sort = $_POST['filter'];
         }
-        $sql = "SELECT * FROM `menu` ORDER BY $sort";
+
+        if(!isset($_POST['textfilter'])){
+          $sortname = "";
+        }
+        else{
+          $sortname = " WHERE `Titel` LIKE " . "'" .  "%"  . $_POST['textfilter'] . "%" . "'" ;
+        }
+
+        $sql = "SELECT * FROM `menu` $sortname ORDER BY $sort";
+
         $stmt = $connect->prepare($sql);
         $stmt->execute();
         $result = $stmt->fetchAll();

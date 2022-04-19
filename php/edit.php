@@ -10,11 +10,6 @@
 </head>
 <body>
     <?php 
-        //$_GET['id']
-        //select
-        //input krijgt die values
-        //Verander values
-        //stuur values naar query
         $sql = "SELECT * FROM `menu` WHERE `ID` = $_GET[id]";
         $stmt = $connect->prepare($sql);
         $stmt->execute();
