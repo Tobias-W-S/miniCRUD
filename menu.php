@@ -1,4 +1,7 @@
-<?php include_once "includes/connect.php";?>
+<?php 
+  include_once "includes/session.php";
+  include_once "includes/connect.php";
+?>
 <!DOCTYPE html>
 <html lang="en">
   <head>

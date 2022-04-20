@@ -1,13 +1,20 @@
 <?php 
-    if(isset($_SESSION['username'])){
-        include_once 'menu.php';
-    }
-    else if ($_POST['username'] == "user" and $_POST['password'] == "admin"){
-        $_SESSION['username'] = "user";
-        include_once 'menu.php';
 
-    }
-    else{
-        echo "Geen toegang";
-    }
+if ($_POST['username'] == "user" and $_POST['password'] == "admin")
+{
+    session_start();
+    $_SESSION['username'] = "user";
+    $_SESSION['id'] = session_id();
+    header("location: menu.php");
+
+}
+else if($_SESSION['id'] == session_id())
+{
+    header("location: menu.php");
+
+}
+else
+{
+    echo "Geen toegang";
+}
 ?>
