@@ -1,4 +1,7 @@
-<?php include_once "includes/connect.php";?>
+<?php 
+  include_once "includes/session.php";
+  include_once "includes/connect.php";
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -23,7 +26,7 @@
                 Lekker veel eten, eten is goed voor je.
               </p>
               <p class="col text-center text-white">
-                Als je meer wilt eten, kan je altijd meer eten halen.adada
+                Als je meer wilt eten, kan je altijd meer eten halen
               </p>
             </div>
         </div>

@@ -7,9 +7,11 @@
             <li class="nav-item">
               <a class="nav-link" href="menu.php">Menu</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="contact.php">Contact</a>
-            </li>
+            <?php 
+              if(isset($_SESSION['id'])){
+                include_once 'logoutNav.php';
+              }
+            ?>
           </ul>
         </div>
-    </nav>
+</nav>
