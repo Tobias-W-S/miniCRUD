@@ -37,12 +37,21 @@
       <div style="padding: 0; width: 75%; top: 30%;" class="container-fluid position-absolute start-50 translate-middle-x px-3">
         <div class="container">
           <div class="col bg-danger rounded mb-5 ps-3 pb-1">
-            <h2 class="text-white">Check out our menu!</h2>
-            <a href="menu.html" class="text-white ">Click here</a>
-          </div>
+            <a href="menu.php" class="text-white title-link">Check out our menu!</a>
+            <div class="row mt-3 mb-3 container-fluid">
+              <?php 
+                $sql = "SELECT `Afbeelding` FROM `menu` LIMIT 3";
 
-          <div class="col bg-danger rounded ps-3 pb-1">
-            <h2 class="text-white">Example</h2>
+                $stmt = $connect->prepare($sql);
+                $stmt->execute();
+                $result = $stmt->fetchAll();
+                foreach($result as $value){
+                  echo '<div class="col">';
+                  echo '<img class="example-img" src="img/' . $value['Afbeelding'] . '">';
+                  echo '</div>';      
+                }
+              ?>
+            </div>
           </div>
         </div>
       </div>

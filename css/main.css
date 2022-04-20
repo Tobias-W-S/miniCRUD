@@ -1,9 +1,16 @@
-*{
-    
-}
 
 .navbar-nav{
     flex-direction: row !important;
     gap: 10px;
 }
 
+.example-img{
+    max-height: 30vh;
+    width: 100%;
+    object-fit: cover;
+}
+
+.title-link{
+    font-weight: 400;
+    font-size: 2em;
+}
