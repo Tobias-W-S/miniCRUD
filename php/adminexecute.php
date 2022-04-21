@@ -1,4 +1,7 @@
 <?php
+    if(!isset($_SESSION['id'])){
+        header("location: ../index.php");
+    }
     include_once "../includes/connect.php";
     var_dump($_POST['MenuTitle']);
     if(isset($_POST['ADDITEM'])){

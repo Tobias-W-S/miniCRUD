@@ -10,6 +10,9 @@
 </head>
 <body>
     <?php 
+        if(!isset($_SESSION['id'])){
+            header("location: ../index.php");
+        }
         $sql = "SELECT * FROM `menu` WHERE `ID` = $_GET[id]";
         $stmt = $connect->prepare($sql);
         $stmt->execute();

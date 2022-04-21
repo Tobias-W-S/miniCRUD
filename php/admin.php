@@ -1,3 +1,9 @@
+<?php 
+    if(!isset($_SESSION['id'])){
+        header("location: ../index.php");
+    }
+?>
+
 <div class="bg-secondary position-relative bg1 admin-menu">
     <form class="addItem" method="post" id="addItem" action="php/adminexecute.php">
         <input id="MenuTitle" name="MenuTitle" type="text" placeholder="Title">
