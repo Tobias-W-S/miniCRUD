@@ -1,16 +1,19 @@
-
-.navbar-nav{
-    flex-direction: row !important;
-    gap: 10px;
+.navbar-nav {
+  flex-direction: row !important;
+  gap: 10px;
 }
 
-.example-img{
-    max-height: 30vh;
-    width: 100%;
-    object-fit: cover;
+.example-img {
+  max-height: 30vh;
+  width: 100%;
+  object-fit: cover;
 }
 
-.title-link{
-    font-weight: 400;
-    font-size: 2em;
+.title-link {
+  font-weight: 400;
+  font-size: 2em;
+}
+
+.text-white {
+  text-decoration: none;
 }
